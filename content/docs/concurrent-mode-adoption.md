@@ -79,6 +79,9 @@ ReactDOM.unstable_createRoot(
 >Note:
 >
 >Concurrent Mode APIs such as `createRoot` only exist in the experimental builds of React.
+>
+>If the experimental APIs are not working as expected, please try to prepend `unstable_` to them. In that case, `createRoot` will be used as `unstable_createRoot`.
+>
 
 In Concurrent Mode, the lifecycle methods [previously marked](/blog/2018/03/27/update-on-async-rendering.html) as "unsafe" actually *are* unsafe, and lead to bugs even more than in today's React. We don't recommend trying Concurrent Mode until your app is [Strict Mode](/docs/strict-mode.html)-compatible.
 
